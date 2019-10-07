@@ -176,33 +176,7 @@ position: absolute;
 
  
  
-@media only screen and (max-width: 600px) {
 
-
-
-.navbar a {
-  color: #BDC1C1;
-  text-decoration: none;
-  text-transform: uppercase;
- font-size: 10px;
-}
-
-
-
-  nav li {
-  display: inline-block;
-  position: relative;
-  padding-top: 1%;
-
-}
- 
- 
- .slideshow-container {
-  margin-top: 170px;
-}
- 
-
-}
 
 
 
@@ -495,12 +469,114 @@ background-image: url("w9.jpg");
 
 }
 
+.crs1
+ {
+  font-size: 4vw;
+ }
+
+ .crs2
+ {
+  list-style-type:square;
+  padding-left: 0%; 
+  padding-right: 0%;
+ }
+ 
+ .crs3
+ {
+  list-style-type:none;
+  color:#D2DEC0;
+  font-size: 2.5vw;
+ }
+ 
+ .crs4
+ {
+  list-style-type:none;
+  padding-left: 10px;
+  padding-right: 0%;
+ }
+ 
+ .crs5
+ {
+  color:#D2DEC0;
+  font-size: 2.5vw;
+ }
 
 
 
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ @media only screen and (max-width: 600px) {
 
 
+
+.navbar a {
+  color: #BDC1C1;
+  text-decoration: none;
+  text-transform: uppercase;
+ font-size: 10px;
+}
+
+
+
+  nav li {
+  display: inline-block;
+  position: relative;
+  padding-top: 1%;
+
+}
+ 
+ 
+ .slideshow-container {
+  margin-top: 170px;
+}
+ 
+  
+  
+  #course{
+
+background-image: url("w9.jpg");
+  background-color: #C8D9E3;
+  padding: 200px;
+  padding-left: 20%;
+   padding-right: 20%;
+  color: #C6C0DE;
+  font-size: 3.5vw;
+
+  padding-bottom: 500px;
+
+}
+
+.crs1
+ {
+  font-size: 6vw;
+ }
+
+ 
+ .crs3
+ {
+  list-style-type:none;
+  color:#D2DEC0;
+  font-size: 4vw;
+ }
+ 
+
+ 
+ .crs5
+ {
+  color:#D2DEC0;
+  font-size: 4vw;
+ }
+
+}
 
 
 /*------------------------------------------                               EXTRA                               -------------------------------------------------------------------*/
@@ -1163,16 +1239,18 @@ background-image: url("w11.jpg");
 
 <div id="course">
 
- <h1 style="font-size: 4vw;"><u>COURSES</u></h1>
+ <h1 class="crs1"><u>COURSES</u></h1>
 
                 <div class="row">
 
                     <div class="column">
 
-                <ul style="list-style-type:square; padding-left: 0%; padding-right: 0%">
+                <ul class="crs2">
 
-                    <li style="list-style-type:none;color:#D2DEC0;font-size: 2.5vw"> <u>COURSE NAME </u></li>
+                    <li class="crs3"> <u>COURSE NAME </u></li>
+                                    
                     <li style="color:#D2DEC0"><a href="HTML/champ.jpg" target="_blank" style='color: #C0CADE;'> Electrical Circuit Simulation Lab </a></li>
+                                                                                      
                     <li style="color:#D2DEC0"><a href="HTML/champ.jpg" target="_blank" style='color: #C0CADE;'> Electrical Machines </a></li>
                     <li style="color:#D2DEC0"><a href="HTML/champ.jpg" target="_blank" style='color: #C0CADE;'>Electronic Circuits - II Lab </a></li>
                     <li style="color:#D2DEC0"><a href="HTML/champ.jpg" target="_blank" style='color: #C0CADE;'>Introduction to Analog and Digital Electronics </a></li>
@@ -1186,9 +1264,10 @@ background-image: url("w11.jpg");
 
             <div class="column">
 
-            <ul style="list-style-type:none;padding-left: 10px;padding-right: 0%">
+            <ul class="crs4">
             
-                    <li style="color:#D2DEC0;font-size: 2.5vw"> <u>COURSE NO. </u></li>
+                    <li class="crs5"> <u>COURSE NO. </u></li>
+                                    
                     <li style="color:#C0CADE">  EEE-1210</a></li>
                     <li style="color:#C0CADE"> EEE-2188</a></li>
                     <li style="color:#C0CADE"> EEE-2204</a></li>
@@ -1197,7 +1276,7 @@ background-image: url("w11.jpg");
                     <li style="color:#C0CADE"> EEE-3110</a></li>
                     <li style="color:#C0CADE"> EEE-3210</a></li>
 
-                                    </ul>
+             </ul>
                                 </div>
                             </div>
  
