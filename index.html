@@ -65,7 +65,7 @@
 .navbar a.active{
 background-color: rgb(200,200,200);
 color: rgb(0,0,50);
-border:4px solid rgb(120,130,100);
+border:4px solid rgb(130,130,100);
 padding: 2px;
 	   
 
@@ -82,8 +82,6 @@ padding: 2px;
 
 @media only screen and (max-width: 1900px) {
 
- 
- 
  
  .navbar a {
  font-size: 15px;
@@ -173,7 +171,7 @@ position: absolute;
 
 
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1070px) {
 
   #slider{
   padding-top: 0px;
@@ -1417,6 +1415,8 @@ font-size: 2vw;
 
 <li><a class="btn"  href="#contactt">CONTACT</a></li>
 
+<a class ="btn" onmouseover="this.style.backgroundColor='rgb(20,0,0)';this.style.color='rgb(255,255,240)'" onmouseout="this.style.backgroundColor='rgb(150,150,150)';this.style.color='rgb(30,0,0)';" style = "color: rgb(30,0,0)" id="demo" href="" onclick="Switch()">Switch</a>
+
 
 
 </nav>
@@ -1694,13 +1694,22 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
 
             <ul class="pro3">
 
+
+              <li>BER Analyzer
+
+                <ul class="pro4">
+
+                  <li><a href="https://shaikh-abrar-kabir.github.io/BER-Analyzer/" target="_blank">MATLAB GUI</a></li>
+
+                  <li><a href="https://shaikh-abrar-kabir.github.io/flutter/" target="_blank">Android Studio (Flutter)</a></li>
+
+                </ul>
+
              <li>MATLAB GUI Based Applications
 
                 <ul class="pro4">
 
                   <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-with-Bangla-English-Calendar/" target="_blank">Age Counter with Bangla & English Calendar</a></li>
-
-                  <li><a href="https://shaikh-abrar-kabir.github.io/BER-Analyzer/" target="_blank">BER Analyzer w.r.t. SNR & SINR</a></li>
 
                   <li><a href="https://shaikh-abrar-kabir.github.io/Sentence-Detector-for-Monophone-Model/" target="_blank">Sentence Detector for Monophone Model</a></li>
 
@@ -1813,9 +1822,26 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
                         
 
 
-                        <li><a href="https://shaikh-abrar-kabir.github.io/websites/" target="_blank">Web Development using JS, HTML, CSS</a></li>
+       <li>Web Development using JS, HTML, CSS
 
-                        <li><a href="https://shaikh-abrar-kabir.github.io/flutter/" target="_blank">BER Analyzer using Android Studio (Flutter) </a></li>
+       <ul class="pro4">
+
+        <li><a href="https://shaikh-abrar-kabir.github.io/AUST/" target="_blank">Formal</a></li>
+        
+        <li><a href="https://shaikh-abrar-kabir.github.io/web/" target="_blank">Casual</a></li>
+        
+
+  
+                      </ul>
+
+
+
+
+
+
+       </li>
+
+                     
 			
 			  <li>CGPA CALCULATOR
                         
@@ -2344,6 +2370,23 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
 
 
 <script>
+
+
+
+
+function Switch() {
+  var a;
+  var r = confirm("Switch to Formal View ? ");
+  if (r == true) {
+   a = document.getElementById('demo');
+   a.href = "https://shaikh-abrar-kabir.github.io/AUST/";
+  } 
+
+}
+
+
+
+
 
 
 
