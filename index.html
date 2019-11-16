@@ -43,27 +43,38 @@
 }
 
 .navbar a {
-  color: #BDC1C1;
+ 
   text-decoration: none;
   text-transform: uppercase;
+  background-color: rgb(150,150,150);
+   color: rgb(0,5,0);
+  border:3px solid rgb(0,10,0);
+  padding: 3px;
  font-size: 20px;
 }
 
 
 .navbar a:hover {
-  background: #ddd;
-  border:5px solid #848479;
+  background: rgb(0,20,0);
+  border:4px solid rgb(200,200,200);
   padding: 2px;
-  color: black;
+  color: rgb(255,255,240);
   z-index: 0;
+}
+
+.navbar a.active{
+background-color: rgb(200,200,200);
+color: rgb(0,0,50);
+border:4px solid rgb(120,130,100);
+padding: 2px;
+	   
+
 }
 
 
   nav li {
   display: inline-block;
-  margin-left: 3.5vw;
   position: relative;
-  padding-top: 2%;
 
 }
 
@@ -79,10 +90,8 @@
 }
  
  
-  nav li {
-  margin-left: 2vw;
 
-}  
+
 
 
 
@@ -106,8 +115,6 @@
 
 
 #slider{
-
-  padding-top: 12px;
   background-image: url("w15.JPG");
   padding-bottom: 1000px;
 
@@ -115,7 +122,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  margin-top: 70px;
+  margin-top: 55px;
   position: relative;
 }
 
@@ -165,18 +172,18 @@ position: absolute;
 
 
 
-@media only screen and (max-width: 539px) {
+
+@media only screen and (max-width: 1010px) {
 
   #slider{
-  padding-top: 65px;
+  padding-top: 0px;
 
 }
 .slideshow-container {
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 }
-
 
 
 
@@ -818,38 +825,33 @@ background-image: url("w2.jpg");
 
   
   
-  
+
+
+
+
+
+.navbar a.active{
+
+	   
+}
   
   
 
 .navbar a {
-  color: #BDC1C1;
-  text-decoration: none;
-  text-transform: uppercase;
  font-size: 9px;
 }
 
 .navbar a:hover {
-  background: #ddd;
-  border:2px solid #848479;
-  padding: 1px;
-  color: black;
-  z-index: 0;
+
+
 }
+
 
   nav li {
- 
-  padding-top: 1%;
-  margin-left: 2vw;
-   
+  margin-top: 2vw;
 
-}
+}  
  
-  nav ul {
-   
-   margin: 2px;
-   padding: 0px;
-  }
 
   
 
@@ -860,12 +862,16 @@ background-image: url("w2.jpg");
 
 
   
-  
+  #slider{
+
+  padding-bottom: 500px;
+
+}
   
  
  .slideshow-container {
-  margin-top: 230px;
-  padding-top: 100px;
+  margin-top: 30px;
+  padding-top: 180px;
 }
  
   .text {
@@ -1309,26 +1315,7 @@ font-size: 2vw;
  
  
  
- 
- @media only screen and (max-width: 1042px) {
 
-  #slider{
-  padding-top: 50px;
-
-}
-
-.slideshow-container {
-  margin-top: 70px;
-}
-
-
-  #code{
-
-  padding-top: 200px;
-}
-
-}
- 
  
  
  
@@ -1404,34 +1391,34 @@ font-size: 2vw;
 
 
 
-<div class="navbar">
+<div class="navbar" id = "navbar">
       
 <nav>
 
-<ul>
-
-<li><a href="#slider">HOME</a></li>
-
-<li><a href="#about">ABOUT ME</a></li>
-
-<li><a href="#Education">BACKGROUND</a></li>
-
-<li><a href="#P">RESEARCH</a></li>
-
-<li><a href="#projectt">PROJECTS</a></li>
-
-<li><a href="#sklll">SKILLS</a></li>
-
-<li><a href="#code">PROGRAMMING</a></li>
-
-<li><a href="#course">COURSES</a></li>
-
-<li><a href="#extraa">ACHIEVEMENTS</a></li>
-
-<li><a href="#contactt">CONTACT</a></li>
 
 
-</ul>
+<li><a class="btn active" href="#slider">HOME</a></li>
+
+<li><a class="btn" href="#about">ABOUT ME</a></li>
+
+<li><a class="btn"  href="#Education">BACKGROUND</a></li>
+
+<li><a class="btn"  href="#P">RESEARCH</a></li>
+
+<li><a class="btn"  href="#projectt">PROJECTS</a></li>
+
+<li><a class="btn"  href="#sklll">SKILLS</a></li>
+
+<li><a class="btn"  href="#code">PROGRAMMING</a></li>
+
+<li><a class="btn"  href="#course">COURSES</a></li>
+
+<li><a class="btn"  href="#extraa">ACHIEVEMENTS</a></li>
+
+<li><a class="btn"  href="#contactt">CONTACT</a></li>
+
+
+
 </nav>
 </div>
 
@@ -1826,7 +1813,7 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
                         
 
 
-                        <li><a href="https://shaikh-abrar-kabir.github.io/web/" target="_blank">Web Development using JS, HTML, CSS</a></li>
+                        <li><a href="https://shaikh-abrar-kabir.github.io/websites/" target="_blank">Web Development using JS, HTML, CSS</a></li>
 
                         <li><a href="https://shaikh-abrar-kabir.github.io/flutter/" target="_blank">BER Analyzer using Android Studio (Flutter) </a></li>
 			
@@ -2357,6 +2344,34 @@ Oli Lowna Baroi, <b>Md. Shaikh Abrar Kabir</b>, Azhar Niaz, Md. Jahidul Islam, M
 
 
 <script>
+
+
+
+
+
+var header = document.getElementById("navbar");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var slideIndex = 0;
 showSlides();
 
